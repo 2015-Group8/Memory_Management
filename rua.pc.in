@@ -1,0 +1,11 @@
+prefix=@PREFIX@
+exec_prefix=@EXEC_PREFIX@
+libdir=@LIBDIR@
+includedir=@INCLUDEDIR@
+
+Name: rua
+Description: recently used application library
+Version: @VERSION@
+Requires: sqlite3
+Libs: -L${libdir} -lrua
+Cflags: -I${includedir}

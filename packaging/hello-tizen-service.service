@@ -1,0 +1,10 @@
+[Unit]
+Description=Start the hello tizen service
+After=bluetooth.service
+
+[Service]
+ExecStart=/usr/bin/hello-tizen-svc
+Type=oneshot
+
+[Install]
+WantedBy=graphical.target
